@@ -1,5 +1,6 @@
 package com.ozimos.test.ui
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -79,7 +80,6 @@ class AppVIewModel @Inject constructor(private val service: ApiService) : ViewMo
 
     fun getChecklit() {
         viewModelScope.launch {
-
             try {
                 _registerData.postValue(StateUtil.Loading)
                 val response = service.getChcecklist()

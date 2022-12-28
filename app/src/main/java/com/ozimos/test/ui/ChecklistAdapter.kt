@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ozimos.test.data.response.CheckListResponse
 import com.ozimos.test.databinding.ItemHomeBinding
 
-class ChecklistAdapter(val items: List<CheckListResponse>) :
+class ChecklistAdapter(private val items: List<CheckListResponse>) :
     RecyclerView.Adapter<ChecklistAdapter.MyViewHolder>() {
     inner class MyViewHolder(private val binding: ItemHomeBinding) :
         RecyclerView.ViewHolder(binding.root) {

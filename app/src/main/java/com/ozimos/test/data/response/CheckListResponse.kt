@@ -11,7 +11,7 @@ data class CheckListResponse(
     val id: Int? = null,
 
     @field:SerializedName("items")
-    val items: Items? = null,
+    val items: List<Items>? = null,
 
     @field:SerializedName("checklistCompletionStatus")
     val checklistCompletionStatus: Boolean? = null
