@@ -15,12 +15,16 @@ class MainActivity : AppCompatActivity() {
 
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
 
-    private val authViewModel: AuthVIewModel by viewModels()
+    private val authViewModel: AppVIewModel by viewModels()
     private val accountHelper by lazy { AccountHelper(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        if (accountHelper.isLogin) {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
 
         setView()
         setObserver()
@@ -41,8 +45,9 @@ class MainActivity : AppCompatActivity() {
                     showToast(state.message)
                 }
                 is StateUtil.Success -> {
-                    showToast(state.data.token ?: "")
+                    showToast("Success Login")
                     accountHelper.setAuthToken(state.data.token ?: "")
+                    startActivity(Intent(this, HomeActivity::class.java))
                 }
             }
         }
@@ -51,7 +56,7 @@ class MainActivity : AppCompatActivity() {
     private fun setView() {
         binding.run {
             tvRegister.setOnClickListener {
-               startActivity(Intent(this@MainActivity, RegisterActivity::class.java))
+                startActivity(Intent(this@MainActivity, RegisterActivity::class.java))
             }
             btnLogin.setOnClickListener {
                 if (edtUsername.text.isNullOrEmpty()) {

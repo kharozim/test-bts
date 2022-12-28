@@ -10,7 +10,7 @@ import com.ozimos.test.util.StateUtil
 class RegisterActivity : AppCompatActivity() {
 
     private val binding by lazy { ActivityRegisterBinding.inflate(layoutInflater) }
-    private val authViewModel: AuthVIewModel by viewModels()
+    private val authViewModel: AppVIewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +25,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun registerObserver() {
-        authViewModel.loginData.observe(this) { state ->
+        authViewModel.registerData.observe(this) { state ->
             when (state) {
                 is StateUtil.Loading -> {
                     showToast("Registration Process")
@@ -34,7 +34,7 @@ class RegisterActivity : AppCompatActivity() {
                     showToast(state.message)
                 }
                 is StateUtil.Success -> {
-                    showToast("Success Registration")
+                    showToast(state.message)
                     onBackPressedDispatcher.onBackPressed()
                 }
             }
