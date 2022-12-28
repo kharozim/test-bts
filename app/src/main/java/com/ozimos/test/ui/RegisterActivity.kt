@@ -2,6 +2,7 @@ package com.ozimos.test.ui
 
 import android.os.Bundle
 import android.widget.Toast
+import android.window.OnBackInvokedDispatcher
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.ozimos.test.databinding.ActivityRegisterBinding
@@ -30,7 +31,6 @@ class RegisterActivity : AppCompatActivity() {
         authViewModel.registerData.observe(this) { state ->
             when (state) {
                 is StateUtil.Loading -> {
-                    showToast("Registration Process")
                 }
                 is StateUtil.Failed -> {
                     showToast(state.message)
@@ -68,6 +68,8 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
     }
+
+
 
     private fun showToast(text: String) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show()

@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         if (accountHelper.isLogin) {
             startActivity(Intent(this, HomeActivity::class.java))
+            finish()
         }
 
         setView()
@@ -48,6 +49,7 @@ class MainActivity : AppCompatActivity() {
                     showToast("Success Login")
                     accountHelper.setAuthToken(state.data.token ?: "")
                     startActivity(Intent(this, HomeActivity::class.java))
+                    finish()
                 }
             }
         }
