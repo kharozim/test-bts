@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextInput" />
+
+    <style name="TextInput.Circular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxCornerRadiusBottomEnd">18dp</item>
+        <item name="boxCornerRadiusBottomStart">18dp</item>
+        <item name="boxCornerRadiusTopEnd">18dp</item>
+        <item name="boxCornerRadiusTopStart">18dp</item>
+        <item name="android:textColorHint">@color/black_54</item>
+        <item name="hintTextColor">@color/black_54</item>
+    </style>
+</resources>

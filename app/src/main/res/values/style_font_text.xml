@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  text theme  -->
+    <style name="TextStyleCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--  Text Display  -->
+    <style name="TextStyleCustom.Display">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">38sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Display.Small">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!--  Text Heading  -->
+    <style name="TextStyleCustom.Heading">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Heading.Large">
+        <item name="android:textSize">27sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Heading.Medium">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Heading.Small">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--  Text Title  -->
+    <style name="TextStyleCustom.Title">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Title.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Title.Medium">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Title.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--  Text Label  -->
+    <style name="TextStyleCustom.Label">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Label.Large">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Label.Medium">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Label.Small">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <!--  Text Body  -->
+    <style name="TextStyleCustom.Body">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Body.Large">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Body.Medium">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextStyleCustom.Body.Small">
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

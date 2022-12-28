@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.RegisterActivity">
 
     <View
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         android:id="@+id/tv_subtitle"
         style="@style/TextStyleCustom.Title.Large"
         android:layout_marginTop="12dp"
-        android:text="@string/login"
+        android:text="@string/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,10 +28,31 @@
         android:layout_height="0dp"
         android:layout_marginVertical="24dp"
         android:src="@drawable/il_login"
-        app:layout_constraintBottom_toTopOf="@id/tie_username"
+        app:layout_constraintBottom_toTopOf="@id/tie_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_subtitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tie_email"
+        style="@style/TextInput.Circular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        app:hintTextAppearance="@style/TextStyleCustom.Label.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/tie_username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -40,9 +61,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="14dp"
         app:hintTextAppearance="@style/TextStyleCustom.Label.Medium"
         app:layout_constraintBottom_toTopOf="@+id/tie_password"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tie_email"
         app:layout_constraintVertical_bias="0.8"
         app:layout_constraintVertical_chainStyle="packed">
 
@@ -50,7 +72,7 @@
             android:id="@+id/edt_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="@string/username"
             android:imeOptions="actionNext"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -63,7 +85,7 @@
         android:layout_marginHorizontal="14dp"
         android:layout_marginTop="14dp"
         app:hintTextAppearance="@style/TextStyleCustom.Label.Medium"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
         app:layout_constraintTop_toBottomOf="@+id/tie_username"
         app:passwordToggleEnabled="true">
 
@@ -77,28 +99,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="14dp"
         android:layout_marginTop="32dp"
-        android:text="@string/login"
+        android:text="Register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tie_password"
         tools:layout_editor_absoluteX="18dp" />
 
-    <TextView
-        android:id="@+id/tv_register"
-        style="@style/TextStyleCustom.Label.Large"
-        android:layout_marginHorizontal="7dp"
-        android:layout_marginTop="12dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:paddingHorizontal="8dp"
-        android:paddingVertical="4dp"
-        android:text="@string/dont_have_account"
-        android:textColor="@color/md_theme_onPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_theme_primary">#53D7F2</color>
+    <color name="md_theme_onPrimary">#00363F</color>
+    <color name="md_theme_primaryContainer">#004E5B</color>
+    <color name="md_theme_onPrimaryContainer">#A8EDFF</color>
+    <color name="md_theme_secondary">#87D991</color>
+    <color name="md_theme_onSecondary">#003914</color>
+    <color name="md_theme_secondaryContainer">#005320</color>
+    <color name="md_theme_onSecondaryContainer">#A3F6AB</color>
+    <color name="md_theme_tertiary">#81CFFF</color>
+    <color name="md_theme_onTertiary">#00344B</color>
+    <color name="md_theme_tertiaryContainer">#004C6B</color>
+    <color name="md_theme_onTertiaryContainer">#C6E7FF</color>
+    <color name="md_theme_error">#FFB4AB</color>
+    <color name="md_theme_errorContainer">#93000A</color>
+    <color name="md_theme_onError">#690005</color>
+    <color name="md_theme_onErrorContainer">#FFDAD6</color>
+    <color name="md_theme_background">#001E2D</color>
+    <color name="md_theme_onBackground">#C5E7FF</color>
+    <color name="md_theme_surface">#001E2D</color>
+    <color name="md_theme_onSurface">#C5E7FF</color>
+    <color name="md_theme_surfaceVariant">#3F484B</color>
+    <color name="md_theme_onSurfaceVariant">#BFC8CB</color>
+    <color name="md_theme_outline">#899295</color>
+    <color name="md_theme_inverseOnSurface">#001E2D</color>
+    <color name="md_theme_inverseSurface">#C5E7FF</color>
+    <color name="md_theme_inversePrimary">#006878</color>
+    <color name="md_theme_shadow">#000000</color>
+    <color name="md_theme_surfaceTint">#53D7F2</color>
+    <color name="md_theme_outlineVariant">#3F484B</color>
+    <color name="md_theme_scrim">#000000</color>
+
+    <!--  black color  -->
+    <color name="black_80">#FFFFFF</color>
+    <color name="black_60">#EEEEEE</color>
+    <color name="black_54">#E0E0E0</color>
+    <color name="black_38">#9E9E9E</color>
+    <color name="black_20">#757575</color>
+    <color name="black_10">#333333</color>
+    <color name="white">#212121</color>
+
+    <!--  red color  -->
+    <color name="red_600">#FFEBEE</color>
+    <color name="red_500">#FFCDD2</color>
+    <color name="red_400">#EF9A9A</color>
+    <color name="red_300">#E57373</color>
+    <color name="red_200">#EF5350</color>
+    <color name="red_100">#F44336</color>
+    <color name="red_50">#E53935</color>
+</resources>
